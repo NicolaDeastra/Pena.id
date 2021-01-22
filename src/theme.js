@@ -20,6 +20,7 @@ export default extendTheme({
         },
       },
     },
+
     Button: {
       variants: {
         solid: props => ({

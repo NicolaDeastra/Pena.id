@@ -9,9 +9,16 @@ import {
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
-  Input,
-  Button,
+  Icon,
+  IconButton,
+  Link,
+  Stack,
 } from '@chakra-ui/react';
+
+import { FaBars, FaTimes } from 'react-icons/fa';
+
+import siteConfig from '../site-config';
+import routes from '../routes';
 
 const MobileDrawer = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -19,9 +26,17 @@ const MobileDrawer = () => {
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="teal" onClick={onOpen}>
-        Open
-      </Button>
+      <IconButton
+        variant="outline"
+        border="none"
+        aria-label="Open menu"
+        ref={btnRef}
+        onClick={onOpen}
+        isRound
+        size="lg"
+        icon={<Icon as={isOpen ? FaTimes : FaBars} />}
+      />
+
       <Drawer
         isOpen={isOpen}
         placement="right"
@@ -31,18 +46,23 @@ const MobileDrawer = () => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader>Create your account</DrawerHeader>
+            <DrawerHeader p={8}>{siteConfig.title}</DrawerHeader>
 
-            <DrawerBody>
-              <Input placeholder="Type here..." />
+            <DrawerBody
+              as={Stack}
+              fontSize="lg"
+              justify="center"
+              p={8}
+              spacing={4}
+            >
+              {[['Home', '/'], ...routes].map(([title, href]) => (
+                <Link href={href} onClick={onClose} key={href}>
+                  {title}
+                </Link>
+              ))}
             </DrawerBody>
 
-            <DrawerFooter>
-              <Button variant="outline" mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button color="blue">Save</Button>
-            </DrawerFooter>
+            <DrawerFooter></DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
       </Drawer>

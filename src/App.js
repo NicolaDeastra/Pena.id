@@ -5,6 +5,7 @@ import theme from './theme';
 
 import Nav from './components/nav';
 import Home from './pages/home';
+import ColorModeSwitcher from './ColorModeSwitcher';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Stack maxW={'6xl'} minH="100vh" mx="auto" p={4} spacing={0}>
         <Nav />
         <Home />
+        <ColorModeSwitcher />
       </Stack>
     </ChakraProvider>
   );
