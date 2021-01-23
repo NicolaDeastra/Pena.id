@@ -15,6 +15,7 @@ import {
   Stack,
 } from '@chakra-ui/react';
 
+import { Link as DomLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 import siteConfig from '../site-config';
@@ -56,9 +57,9 @@ const MobileDrawer = () => {
               spacing={4}
             >
               {[['Home', '/'], ...routes].map(([title, href]) => (
-                <Link href={href} onClick={onClose} key={href}>
-                  {title}
-                </Link>
+                <DomLink key={href} to={href}>
+                  <Link onClick={onClose}>{title}</Link>
+                </DomLink>
               ))}
             </DrawerBody>
 

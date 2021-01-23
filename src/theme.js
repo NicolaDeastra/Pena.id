@@ -61,7 +61,7 @@ export default extendTheme({
     global: props => ({
       body: {
         bg: mode('#F6F6F6', '#303030')(props),
-        color: mode('#120b0d', '#f8f0f2')(props),
+        color: mode('#0d0d0d', '#f8f0f2')(props),
       },
     }),
   },

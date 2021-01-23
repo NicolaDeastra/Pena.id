@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChakraProvider, Stack } from '@chakra-ui/react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import theme from './theme';
 
@@ -11,9 +12,15 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Stack maxW={'6xl'} minH="100vh" mx="auto" p={4} spacing={0}>
-        <Nav />
-        <Home />
-        <ColorModeSwitcher />
+        <Router>
+          <Nav />
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+          </Switch>
+          <ColorModeSwitcher />
+        </Router>
       </Stack>
     </ChakraProvider>
   );
