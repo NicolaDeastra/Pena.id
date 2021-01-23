@@ -9,7 +9,7 @@ Pena.id open source blog website
 - [x] Mobile Drawer
 - [ ] Home page
   - [x] Hero component
-  - [ ] About Component
+  - [x] About Component
   - [ ] Category blog page
   - [ ] Latest blog page
   - [ ] Popular page

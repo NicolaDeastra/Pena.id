@@ -19,7 +19,7 @@ const Hero = () => {
       pt={['1rem', '4rem']}
       align={['center', 'flex-start']}
       flexDirection={{ base: 'column', md: 'row' }}
-      mb={12}
+      mb={{ base: 20, md: 12 }}
     >
       <Box boxSize={{ base: 'xs', md: 'sm' }} mb={['2.5rem', '0']}>
         <Heading as="h2" size="xl" mb="1.4rem" textAlign={['center', 'left']}>
