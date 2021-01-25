@@ -15,21 +15,31 @@ export default extendTheme({
     },
     Link: {
       variants: {
-        link: {
-          color: '#6ACAD8',
-        },
+        link: props => ({
+          color: mode('#ce5b4a', '#D8786A')(props),
+        }),
       },
     },
 
     Button: {
       variants: {
         solid: props => ({
-          bg: mode('#bce7f1', '#6ACAD8')(props),
+          color: mode('#F6F6F6', '#f8f0f2')(props),
+          bg: mode('#D8786A', '#D8786A')(props),
           _hover: {
-            bg: mode('#98d9e6', '#3594b5')(props),
+            bg: mode('#ce5b4a', '#ce5b4a')(props),
           },
           _active: {
-            bg: mode('#72cdda', '#256b8d')(props),
+            bg: mode('#b54231', '#b54231')(props),
+          },
+        }),
+        secondary: props => ({
+          bg: mode('#bce7f1', '#4A4A4A')(props),
+          _hover: {
+            bg: mode('#98d9e6', '#282626')(props),
+          },
+          _active: {
+            bg: mode('#72cdda', '#150a0d')(props),
           },
         }),
       },
@@ -57,11 +67,12 @@ export default extendTheme({
     '7xs': '6rem',
     '8xs': '4rem',
   },
+  space: {},
   styles: {
     global: props => ({
       body: {
         bg: mode('#F6F6F6', '#303030')(props),
-        color: mode('#0d0d0d', '#f8f0f2')(props),
+        color: mode('#262626', '#f8f0f2')(props),
       },
     }),
   },

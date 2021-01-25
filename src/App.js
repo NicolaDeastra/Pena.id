@@ -6,22 +6,26 @@ import theme from './theme';
 
 import Nav from './components/nav';
 import Home from './pages/home';
+import Dashboard from './pages/dashboard';
 import ColorModeSwitcher from './ColorModeSwitcher';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Stack maxW={'6xl'} minH="100vh" mx="auto" p={4} spacing={0}>
-        <Router>
-          <Nav />
+      <Router>
+        <Nav />
+        <Stack maxW={'6xl'} minH="100vh" mx="auto" py={4} px={14} spacing={0}>
           <Switch>
             <Route path="/" exact>
               <Home />
             </Route>
+            <Route path="/dashboard" exact>
+              <Dashboard />
+            </Route>
           </Switch>
           <ColorModeSwitcher />
-        </Router>
-      </Stack>
+        </Stack>
+      </Router>
     </ChakraProvider>
   );
 }
