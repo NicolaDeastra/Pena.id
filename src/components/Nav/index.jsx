@@ -2,8 +2,8 @@ import * as React from 'react';
 import { HStack, Link, useMediaQuery, Divider } from '@chakra-ui/react';
 import { Link as DomLink } from 'react-router-dom';
 
-import routes from '../routes';
-import MobileDrawer from './mobileDrawer';
+import routes from '../../routes';
+import MobileDrawer from '../mobileDrawer';
 
 const Nav = () => {
   const [isDestop] = useMediaQuery('(min-width: 960px)');

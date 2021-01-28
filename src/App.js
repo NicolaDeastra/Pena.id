@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import theme from './theme';
 
-import Nav from './components/nav';
+import Nav from './components/Nav';
 import Home from './pages/home';
 import Dashboard from './pages/dashboard';
 import ColorModeSwitcher from './ColorModeSwitcher';

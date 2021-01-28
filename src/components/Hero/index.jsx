@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Heading, Text, VStack, Button, Center } from '@chakra-ui/react';
 
-import siteConfig from '../site-config';
+import siteConfig from '../../site-config';
 
 const Hero = () => {
   return (

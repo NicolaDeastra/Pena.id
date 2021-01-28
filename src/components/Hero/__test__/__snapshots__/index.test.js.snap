@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero render correctly 1`] = `
+<div>
+  <div
+    align="center"
+    class="css-1i0j96w"
+  >
+    <div
+      class="chakra-stack css-xjf8f"
+    >
+      <h2
+        class="chakra-heading css-ue84p2"
+      >
+        Publish Platform for Professional Bloggers
+      </h2>
+      <p
+        class="chakra-text css-ecbqlw"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt porta neque, ac ornare justo.
+      </p>
+      <button
+        class="chakra-button css-1bhjgw4"
+        type="button"
+      >
+        Get Started
+      </button>
+    </div>
+  </div>
+</div>
+`;
