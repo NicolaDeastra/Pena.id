@@ -1,17 +1,45 @@
-const { FaShieldAlt, FaRegCompass, FaMoneyBillAlt } = require('react-icons/fa');
-
 const description =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt porta neque, ac ornare justo.';
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt porta neque, ac ornare justo Aliquam tincidunt porta neque.';
 
-const about = [
-  [FaShieldAlt, 'Lorem ipsum dolor'],
-  [FaRegCompass, 'Lorem ipsum dolor sit amet'],
-  [FaMoneyBillAlt, 'Lorem ipsum dolor'],
-];
+const year = new Date().getFullYear();
+
+const footer = {
+  copyright: `${year} Copyright`,
+  rotes: [
+    {
+      heading: 'Product',
+      routes: [
+        ['Product', '/product'],
+        ['Pricing', '/pricing'],
+        ['Log in', '/login'],
+        ['Request access', '/access'],
+        ['Partnership', '/partnership'],
+      ],
+    },
+    {
+      heading: 'About Us',
+      routes: [
+        ['About pena.id', '/about'],
+        ['Contact us', '/contact'],
+        ['features', '/features'],
+        ['Careers', '/careers'],
+      ],
+    },
+    {
+      heading: 'Resource',
+      routes: [
+        ['Help center', '/help'],
+        ['Book a demo', '/demo'],
+        ['Server status', '/status'],
+        ['Blog', '/blog'],
+      ],
+    },
+  ],
+};
 
 module.exports = {
   title: 'Pena.id',
   heading: 'Publish Platform for Professional Bloggers',
   subHeading: description,
-  about,
+  footer,
 };

@@ -16,21 +16,20 @@ export default extendTheme({
     Link: {
       variants: {
         link: props => ({
-          color: mode('#ce5b4a', '#D8786A')(props),
+          color: mode('#fb83a4', '#fb83a4')(props),
         }),
       },
     },
-
     Button: {
       variants: {
         solid: props => ({
           color: mode('#F6F6F6', '#f8f0f2')(props),
-          bg: mode('#D8786A', '#D8786A')(props),
+          bg: mode('#D8786A', '#f8537f')(props),
           _hover: {
-            bg: mode('#ce5b4a', '#ce5b4a')(props),
+            bg: mode('#ce5b4a', '#f52569')(props),
           },
           _active: {
-            bg: mode('#b54231', '#b54231')(props),
+            bg: mode('#b54231', '#dc0e5d')(props),
           },
         }),
         secondary: props => ({

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import theme from './theme';
 
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 import Home from './pages/home';
 import Dashboard from './pages/dashboard';
 import ColorModeSwitcher from './ColorModeSwitcher';
@@ -23,6 +24,7 @@ function App() {
               <Dashboard />
             </Route>
           </Switch>
+          <Footer />
           <ColorModeSwitcher />
         </Stack>
       </Router>
