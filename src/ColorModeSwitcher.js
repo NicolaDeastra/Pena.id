@@ -9,9 +9,8 @@ const ColorModeSwitcher = props => {
 
   return (
     <IconButton
-      bottom={{ base: 0, md: 15 }}
-      right={{ base: 2, md: 38 }}
-      p={5}
+      bottom={{ base: 4, md: 15 }}
+      right={{ base: 4, md: 38 }}
       pos="fixed"
       zIndex={1}
       size="md"

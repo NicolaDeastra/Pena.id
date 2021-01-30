@@ -15,7 +15,14 @@ function App() {
     <ChakraProvider theme={theme}>
       <Router>
         <Nav />
-        <Stack maxW={'6xl'} minH="100vh" mx="auto" py={4} px={14} spacing={0}>
+        <Stack
+          maxW={'6xl'}
+          minH="100vh"
+          mx="auto"
+          py={4}
+          px={[4, 14]}
+          spacing={0}
+        >
           <Switch>
             <Route path="/" exact>
               <Home />
@@ -25,8 +32,8 @@ function App() {
             </Route>
           </Switch>
           <Footer />
-          <ColorModeSwitcher />
         </Stack>
+        <ColorModeSwitcher />
       </Router>
     </ChakraProvider>
   );

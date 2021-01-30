@@ -12,7 +12,7 @@ const Hero = () => {
       flexDirection={{ base: 'column', md: 'row' }}
       mb={{ base: 20, md: '7rem' }}
     >
-      <VStack spacing={6} px="10rem">
+      <VStack spacing={6} px={['2rem', '10rem']}>
         <Heading as="h2" size="xl" mb="1.4rem" textAlign="center">
           {siteConfig.heading}
         </Heading>

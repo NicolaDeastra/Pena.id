@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <>
-      <HStack spacing={0} py={4} pr="6.8rem" pl="8rem">
+      <HStack spacing={0} py={4} pr={['2rem', '6.8rem']} pl={['2rem', '8rem']}>
         <DomLink to="/">
           <Link fontWeight="extrabold" fontSize="lg" href="/" variant="link">
             Pena.id

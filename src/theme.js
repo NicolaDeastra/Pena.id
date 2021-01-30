@@ -16,7 +16,7 @@ export default extendTheme({
     Link: {
       variants: {
         link: props => ({
-          color: mode('#fb83a4', '#fb83a4')(props),
+          color: mode('#f52569', '#fb83a4')(props),
         }),
       },
     },
@@ -24,12 +24,12 @@ export default extendTheme({
       variants: {
         solid: props => ({
           color: mode('#F6F6F6', '#f8f0f2')(props),
-          bg: mode('#D8786A', '#f8537f')(props),
+          bg: mode('#f52569', '#f8537f')(props),
           _hover: {
-            bg: mode('#ce5b4a', '#f52569')(props),
+            bg: mode('#dc0e5d', '#f52569')(props),
           },
           _active: {
-            bg: mode('#b54231', '#dc0e5d')(props),
+            bg: mode('#ac0754', '#dc0e5d')(props),
           },
         }),
         secondary: props => ({
